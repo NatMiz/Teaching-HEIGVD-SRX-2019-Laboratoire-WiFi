@@ -105,6 +105,8 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 > 
 > **_Réponse :_** Environ 1 seconde.
 
+![clef WEP](images/wep.png)
+
 ---
 > **_Question :_** Arrivez-vous à récupérer les informations d’identification (credentials) de l’authentification basique http contenue dans la capture ?
 > 
@@ -150,18 +152,20 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 
 > **_Question :_** Combien de temps avez-vous attendu pour obtenir la passphrase WPA ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_** Nous avons attendu 1 minutes 5 secondes pour obtenir la passphrase `anticonstitutionnellement`.
+
+![Clef WPA](images/wpa.png)
 
 ---
 > **_Question :_** Lors de la capture, la cible a fait un « ping » sur un serveur. Arrivez-vous à dire de quel serveur il s’agit ?
 
 > 
-> **_Réponse :_** 
-> 
-> Adresse IP du serveur : ?
+> **_Réponse :_**
+> Adresse IP du serveur : `31.13.64.35`
 >
-> Nom de Domaine : ?
+> Nom de Domaine : edge-star-mini-shv-01-amt2.facebook.com
 
+![nslookup](images/nslookup.png)
 
 ---
 
