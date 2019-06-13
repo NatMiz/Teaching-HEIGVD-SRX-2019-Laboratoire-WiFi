@@ -42,22 +42,22 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 
 > **_Question :_** Quel filtre avez-vous utilisé
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  Nous avons utilisé le filtre `wlan.fc.type_subtype==4`.
 
 ---
 > **_Question :_** Quel est l’adresse MAC de la cible ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  L'adresse de MAC de la cible est `SamsungE_22:49:74 (fc:f1:36:22:49:74)`. 
 
 ---
 > **_Question :_** Quel est le nom du constructeur de l’interface sans fils de la cible ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_** Samsung Electronics Co., Ltd. Trouvé grâce aux 6 premiers bytes du MAC (fc:f1:36).
 
 ---
 > **_Question :_** Quel autres endroits la cible a-t-elle probablement visités ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_** Grâce au filtre `wlan.ta == fc:f1:36:22:49:74`, nous constatons que la cible a probablement visité Migros, Fleur de pain et l'aéroport de Genève.
 
 ---
 
@@ -103,12 +103,12 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 
 > **_Question :_** Combien de temps avez-vous attendu pour obtenir la clé WEP ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_** Environ 1 seconde.
 
 ---
 > **_Question :_** Arrivez-vous à récupérer les informations d’identification (credentials) de l’authentification basique http contenue dans la capture ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_** Oui, il s'agit de `admin:admin`. On utilise le filtre `eapol` pour afficher le 4-way-handshake.
 
 ---
 
